@@ -105,6 +105,18 @@
                     "description": "Single video by @TheDuoDesign",
                     "url": "https://www.youtube.com/watch?v=yHgxzONOgbA",
                     "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "[MONSTERPATCH ALPHA] It's HERE!",
+                    "description": "A livestream VOD by @AllatouNyx",
+                    "url": "https://www.youtube.com/live/p19Wp_rJxJ4",
+                    "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "NEW Monsterpatch Alpha Playthrough!",
+                    "description": "A livestream VOD by @PixelShaun",
+                    "url": "https://www.youtube.com/live/pAIy4oIXhYs",
+                    "icon": "fa-brands fa-youtube"
                 }
             ]
         },
