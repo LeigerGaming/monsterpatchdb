@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MonsterpatchDB</title>
         <link rel="stylesheet" href="./fonts/fontawesome-free-7.3.0-web/css/all.min.css">
+        <link rel="stylesheet" href="./assets/featured-video.css">
         <style>
             @font-face {
                 font-family: "Roses FF0000 Local";
@@ -278,10 +279,27 @@
                 <p>Everything useful in one place: official updates, social channels, community tools, videos, and other SmashGames projects. Send feedback on <a href="https://github.com/LeigerGaming/monsterpatchdb" target="_blank">GitHub</a> or <a href="https://discord.com/channels/1283131155645857844/1524436413620158464" target="_blank">Discord</a>.</p>
             </section>
 
-            <section id="load-status" class="status"><strong>Loading links...</strong> Pulling panel content from a separate data file.</section>
+            <section id="load-status" class="status">
+                <strong>Loading links...</strong>
+            </section>
             <section id="card-grid" class="card-grid" hidden></section>
         </main>
 
+        <aside id="featured-video-slot" class="featured-video-slot" hidden></aside>
+
+        <div id="video-modal" class="video-modal" hidden>
+            <button type="button" class="video-modal-backdrop" aria-label="Close video"></button>
+            <div class="video-modal-panel">
+                <button type="button" id="video-modal-close" class="video-modal-close" aria-label="Close video">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+                <div class="video-modal-frame">
+                    <iframe id="video-modal-iframe" title="Video player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/featured-video.js"></script>
         <script>
             const status = document.getElementById("load-status");
             const cardGrid = document.getElementById("card-grid");
@@ -352,6 +370,7 @@
 
                     const data = await response.json();
                     const sections = Array.isArray(data.sections) ? data.sections : [];
+                    const featuredVideo = data.featuredVideo && typeof data.featuredVideo === "object" ? data.featuredVideo : null;
 
                     if (!sections.length) {
                         throw new Error("No sections found");
@@ -364,6 +383,7 @@
 
                     cardGrid.replaceChildren(fragment);
                     cardGrid.hidden = false;
+                    renderFeaturedVideo(featuredVideo);
                     status.hidden = true;
                 } catch (error) {
                     status.innerHTML = "<strong>Could not load links.</strong> Please let Leigerpatch know in the <a href='https://discord.gg/EmhSRUxP8Z' target='_blank'>Monsterpatch Discord server</a>.";
