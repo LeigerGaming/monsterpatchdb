@@ -123,6 +123,14 @@
                 gap: 12px;
             }
 
+            @media (min-width: 760px) {
+                .games-card .link-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 12px;
+                }
+            }
+
             .link-item,
             .link-item:visited {
                 display: flex;
@@ -312,6 +320,10 @@
             function createCard(section) {
                 const article = document.createElement("article");
                 article.className = "card";
+
+                if (typeof section.title === "string" && section.title.toLowerCase().includes("game")) {
+                    article.classList.add("games-card");
+                }
 
                 const heading = document.createElement("h2");
                 heading.textContent = section.title;

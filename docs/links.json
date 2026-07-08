@@ -122,7 +122,7 @@
         },
         {
             "title": "Other Games",
-            "description": "This is a list of all games published by SmashGames, including Monsterpatch.",
+            "description": "This is a list of games published by SmashGames, including Monsterpatch.",
             "links": [
                 {
                     "title": "Monsterpatch",
@@ -137,9 +137,21 @@
                     "icon": "fa-brands fa-steam"
                 },
                 {
+                    "title": "Kindergarten 2",
+                    "description": "Release date: 2019",
+                    "url": "https://store.steampowered.com/app/1067850/Kindergarten_2/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
                     "title": "Wraithslayer",
                     "description": "Release date: 2019",
                     "url": "https://store.steampowered.com/app/1007630/Wraithslayer/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Kindergarten",
+                    "description": "Releasde date: 2017",
+                    "url": "https://store.steampowered.com/app/589590/Kindergarten/",
                     "icon": "fa-brands fa-steam"
                 },
                 {
@@ -153,6 +165,12 @@
                     "description": "Release date: 2014",
                     "url": "https://store.steampowered.com/app/268750/Magicite/",
                     "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Pixel Kingdom",
+                    "description": "Release date: 2013",
+                    "url": "https://play.google.com/store/apps/details?id=com.SmashGames.PixelKingdom&hl=en",
+                    "icon": "fa-brands fa-google-play"
                 }
             ]
         }
