@@ -1,0 +1,148 @@
+{
+    "sections": [
+        {
+            "title": "Monsterpatch Community",
+            "description": "Official updates, player chat, bug reporting, and core community resources.",
+            "links": [
+                {
+                    "title": "Kickstarter Updates",
+                    "description": "The official Kickstarter page with regular status updates on the game",
+                    "url": "https://www.kickstarter.com/projects/seanyoung/monsterpatch-a-cozy-monster-collecting-rpg/posts",
+                    "icon": "fa-brands fa-kickstarter-k"
+                },
+                {
+                    "title": "Wishlist on Steam",
+                    "description": "Store page and the Steam community",
+                    "url": "https://store.steampowered.com/app/2495320/Monsterpatch/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Monsterpatch on Discord",
+                    "description": "Chat with players, discuss the alpha, and report bugs here!",
+                    "url": "https://discord.gg/EmhSRUxP8Z",
+                    "icon": "fa-brands fa-discord"
+                },
+                {
+                    "title": "Monsterpatch on Reddit",
+                    "description": "Community discussion and fan content",
+                    "url": "https://www.reddit.com/r/Monsterpatch/",
+                    "icon": "fa-brands fa-reddit"
+                }
+            ]
+        },
+        {
+            "title": "SeanYoungSG Social",
+            "description": "Official developer channels for updates, screenshots, and other announcements.",
+            "links": [
+                {
+                    "title": "YouTube",
+                    "description": "Videos, trailers, and devlog content",
+                    "url": "https://www.youtube.com/channel/UC-RapUUofT5dz9DBisLAKpQ",
+                    "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "Twitter / X",
+                    "description": "Follow the developer on Twitter",
+                    "url": "https://x.com/SeanYoungSG",
+                    "icon": "fa-brands fa-x-twitter"
+                },
+                {
+                    "title": "Instagram",
+                    "description": "Follow the developer on Instagram",
+                    "url": "https://www.instagram.com/seanyoungsg/",
+                    "icon": "fa-brands fa-instagram"
+                }
+            ]
+        },
+        {
+            "title": "Community Tools",
+            "description": "Useful fan-built utilities and companion projects for the most dedicated wizard.",
+            "links": [
+                {
+                    "title": "Monsterpatch Wiki",
+                    "description": "MoNs, statistics, and reference data",
+                    "url": "https://monsterpatch.miraheze.org/wiki/Main_Page",
+                    "icon": "fa-solid fa-book-open"
+                },
+                {
+                    "title": "Team Builder",
+                    "description": "Build and test your ultimate Monsterpatch team of 4 MoNs",
+                    "url": "https://monsterpatchwiki-spec.github.io/Monsterpatch-Team-Builder/",
+                    "icon": "fa-solid fa-table-cells-large"
+                },
+                {
+                    "title": "MMOnsterpatch",
+                    "description": "The fan-made MMO client for Monsterpatch",
+                    "url": "https://github.com/Gamingwithgoose/MMOnsterpatch-Launcher",
+                    "icon": "fa-solid fa-book-atlas"
+                }
+            ]
+        },
+        {
+            "title": "Community Videos",
+            "description": "Dedicated creator coverage and standout videos from the wider community.",
+            "links": [
+                {
+                    "title": "Leigerpatch",
+                    "description": "Dedicated Monsterpatch channel",
+                    "url": "https://youtube.com/@Leigerpatch",
+                    "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "MoNsterPatchPrincess",
+                    "description": "Dedicated Monsterpatch channel",
+                    "url": "https://youtube.com/@MoNsterPatchPrincess",
+                    "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "Kelpyu",
+                    "description": "Dedicated Monsterpatch channel",
+                    "url": "https://www.youtube.com/@Kelpyu",
+                    "icon": "fa-brands fa-youtube"
+                },
+                {
+                    "title": "Which Starter We Picking?",
+                    "description": "Single video by @TheDuoDesign",
+                    "url": "https://www.youtube.com/watch?v=yHgxzONOgbA",
+                    "icon": "fa-brands fa-youtube"
+                }
+            ]
+        },
+        {
+            "title": "Other Games",
+            "description": "This is a list of all games published by SmashGames, including Monsterpatch.",
+            "links": [
+                {
+                    "title": "Monsterpatch",
+                    "description": "Release date: TBA",
+                    "url": "https://store.steampowered.com/app/2495320/Monsterpatch/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Littlewood",
+                    "description": "Release date: 2020",
+                    "url": "https://store.steampowered.com/app/894940/Littlewood/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Wraithslayer",
+                    "description": "Release date: 2019",
+                    "url": "https://store.steampowered.com/app/1007630/Wraithslayer/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Roguelands",
+                    "description": "Release date: 2016",
+                    "url": "https://store.steampowered.com/app/364420/Roguelands/",
+                    "icon": "fa-brands fa-steam"
+                },
+                {
+                    "title": "Magicite",
+                    "description": "Release date: 2014",
+                    "url": "https://store.steampowered.com/app/268750/Magicite/",
+                    "icon": "fa-brands fa-steam"
+                }
+            ]
+        }
+    ]
+}
