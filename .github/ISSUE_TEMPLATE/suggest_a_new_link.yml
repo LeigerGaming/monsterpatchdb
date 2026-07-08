@@ -1,0 +1,38 @@
+name: Suggest a new link
+description: Suggest a channel, creator, or resource to include
+title: "[Link Suggestion]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the list.
+
+        NOTE: New videos and VODs from the community may not be accepted.
+        To keep this project maintainable, the long-term focus is on channels
+        and creators that are almost exclusively focused on Monsterpatch,
+        and we'll just include a channel link (not a link to specific videos).
+        It is not realistic for us to include every video from mixed-topic creators.
+  - type: input
+    id: name
+    attributes:
+      label: Channel or resource name
+      placeholder: What is this link for?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Primary URL
+      description: Where should we be linking to?
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Monsterpatch focus
+      description: Explain how this link is related to Monsterpatch
+    validations:
+      required: true
