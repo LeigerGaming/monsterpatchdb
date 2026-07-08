@@ -80,7 +80,7 @@
         },
         {
             "title": "Community Videos",
-            "description": "Dedicated creator coverage and standout videos from the wider community.",
+            "description": "Dedicated creator coverage, and popular videos from the wider community.",
             "links": [
                 {
                     "title": "Leigerpatch",
@@ -102,19 +102,19 @@
                 },
                 {
                     "title": "Which Starter We Picking?",
-                    "description": "Single video by @TheDuoDesign",
+                    "description": "Popular video by @TheDuoDesign",
                     "url": "https://www.youtube.com/watch?v=yHgxzONOgbA",
                     "icon": "fa-brands fa-youtube"
                 },
                 {
                     "title": "[MONSTERPATCH ALPHA] It's HERE!",
-                    "description": "A livestream VOD by @AllatouNyx",
+                    "description": "Alpha livestream VOD by @AllatouNyx",
                     "url": "https://www.youtube.com/live/p19Wp_rJxJ4",
                     "icon": "fa-brands fa-youtube"
                 },
                 {
                     "title": "NEW Monsterpatch Alpha Playthrough!",
-                    "description": "A livestream VOD by @PixelShaun",
+                    "description": "Alpha livestream VOD by @PixelShaun",
                     "url": "https://www.youtube.com/live/pAIy4oIXhYs",
                     "icon": "fa-brands fa-youtube"
                 }
