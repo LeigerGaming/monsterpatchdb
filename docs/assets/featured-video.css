@@ -14,7 +14,7 @@
     padding: 10px;
     border: 1px solid var(--border);
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.96);
+    background: var(--surface-translucent);
     box-shadow: 0 22px 60px rgba(34, 31, 26, 0.16);
     backdrop-filter: blur(8px);
     color: var(--text);
@@ -135,7 +135,7 @@
         padding: 10px 12px;
         border: 1px solid var(--border);
         border-radius: 16px;
-        background: rgba(255, 255, 255, 0.96);
+        background: var(--surface-translucent);
         box-shadow: 0 16px 34px rgba(34, 31, 26, 0.14);
         backdrop-filter: blur(8px);
         color: var(--text);
