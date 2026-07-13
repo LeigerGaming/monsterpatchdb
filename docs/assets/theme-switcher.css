@@ -1,0 +1,28 @@
+.theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 30;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    border-color: #bdb5aa;
+    outline: none;
+}
+
+.theme-toggle i {
+    font-size: 15px;
+    line-height: 1;
+}

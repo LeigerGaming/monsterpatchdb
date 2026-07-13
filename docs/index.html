@@ -4,11 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MonsterpatchDB</title>
+        <script>
+            (function () {
+                var theme = localStorage.getItem("theme");
+                if (theme === "light" || theme === "dark") {
+                    document.documentElement.setAttribute("data-theme", theme);
+                }
+            })();
+        </script>
         <link rel="stylesheet" href="./fonts/fontawesome-free-7.3.0-web/css/all.min.css">
         <link rel="stylesheet" href="./assets/app.css">
         <link rel="stylesheet" href="./assets/featured-video.css">
+        <link rel="stylesheet" href="./assets/theme-switcher.css">
     </head>
     <body>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+
         <main class="page-shell">
             <section class="hero">
                 <div class="eyebrow">Community Link Hub</div>
@@ -36,6 +49,7 @@
             </div>
         </div>
 
+        <script src="./assets/theme-switcher.js"></script>
         <script src="./assets/featured-video.js"></script>
         <script src="./assets/app.js"></script>
     </body>
