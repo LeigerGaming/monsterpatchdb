@@ -1,0 +1,26 @@
+name: Validate JSON
+
+on:
+  pull_request:
+    paths:
+      - "docs/links.json"
+      - ".github/scripts/validate-json.mjs"
+      - ".github/workflows/validate-json.yml"
+  push:
+    branches: [master, workflows]
+    paths:
+      - "docs/links.json"
+      - ".github/scripts/validate-json.mjs"
+      - ".github/workflows/validate-json.yml"
+  workflow_dispatch: {}
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+      - name: Validate links.json schema
+        run: node .github/scripts/validate-json.mjs

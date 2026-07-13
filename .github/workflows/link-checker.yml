@@ -1,0 +1,37 @@
+name: Link Checker
+
+on:
+  pull_request:
+    paths:
+      - "docs/links.json"
+      - "docs/index.html"
+      - ".github/config/lychee.toml"
+      - ".github/workflows/link-checker.yml"
+  push:
+    branches: [master, workflows]
+    paths:
+      - "docs/links.json"
+      - "docs/index.html"
+      - ".github/config/lychee.toml"
+      - ".github/workflows/link-checker.yml"
+  schedule:
+    - cron: "0 13 * * 1" # weekly, Monday 13:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  link-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check links in HTML and JSON files
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: >-
+            --config .github/config/lychee.toml
+            './docs/links.json'
+            './docs/index.html'
+          fail: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,25 @@
+name: Validate HTML
+
+on:
+  pull_request:
+    paths:
+      - "docs/index.html"
+      - ".github/workflows/validate-html.yml"
+  push:
+    branches: [master, workflows]
+    paths:
+      - "docs/index.html"
+      - ".github/workflows/validate-html.yml"
+  workflow_dispatch: {}
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: HTML5 Validator
+        uses: anishathalye/proof-html@v2
+        with:
+          directory: docs
+          check_css: false
+          disable_external: true
