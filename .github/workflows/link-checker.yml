@@ -15,7 +15,7 @@ on:
       - ".github/config/lychee.toml"
       - ".github/workflows/link-checker.yml"
   schedule:
-    - cron: "0 13 * * 1" # weekly, Monday 13:00 UTC
+    - cron: "0 13 * * 1" # weekly, MoNday 13:00 UTC
   workflow_dispatch: {}
 
 jobs:
