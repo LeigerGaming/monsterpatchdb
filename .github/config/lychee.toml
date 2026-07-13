@@ -1,0 +1,18 @@
+# DOCUMENTATION: https://lychee.cli.rs/guides/config/
+verbose = "info"
+no_progress = true
+extensions = ["json", "html", "htm", "md"]
+exclude_loopback = true
+include_mail = false
+max_retries = 2
+retry_wait_time = 30
+timeout = 20
+user_agent = "Mozilla/5.0 (compatible; monsterpatchdb-link-check/1.0)"
+
+# Regex patterns to exclude some domains if they reject bots
+# If it is flaky, we should try tuning the retry/timeout settings above first
+exclude = [
+    '^https://(www\.)?kickstarter\.com',
+    '^https://(www\.)?reddit\.com',
+    '^https://(www\.)?instagram\.com',
+]
