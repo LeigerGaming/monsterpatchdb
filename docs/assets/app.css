@@ -77,6 +77,11 @@ h1 {
     overflow-wrap: anywhere;
 }
 
+.hero p a,
+.hero p a:visited {
+    color: var(--text);
+}
+
 .card-grid {
     display: flex;
     flex-wrap: wrap;
