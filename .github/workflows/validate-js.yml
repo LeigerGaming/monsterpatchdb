@@ -1,0 +1,26 @@
+name: Validate JS
+
+on:
+  pull_request:
+    paths:
+      - "docs/assets/**/*.js"
+      - ".github/config/eslint.config.mjs"
+      - ".github/workflows/validate-js.yml"
+  push:
+    branches: [master, workflows]
+    paths:
+      - "docs/assets/**/*.js"
+      - ".github/config/eslint.config.mjs"
+      - ".github/workflows/validate-js.yml"
+  workflow_dispatch: {}
+
+jobs:
+  validate-js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+      - name: Run ESLint
+        run: npx --yes eslint@9 --config .github/config/eslint.config.mjs docs/assets
