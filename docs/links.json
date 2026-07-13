@@ -172,12 +172,6 @@
                     "description": "Release date: 2014",
                     "url": "https://store.steampowered.com/app/268750/Magicite/",
                     "icon": "fa-brands fa-steam"
-                },
-                {
-                    "title": "Pixel Kingdom",
-                    "description": "Release date: 2013",
-                    "url": "https://play.google.com/store/apps/details?id=com.SmashGames.PixelKingdom&hl=en",
-                    "icon": "fa-brands fa-google-play"
                 }
             ]
         }
